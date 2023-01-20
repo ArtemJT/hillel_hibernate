@@ -1,9 +1,9 @@
 package com.example.hw_26_hibernate.repositories;
 
-import com.example.hw_26_hibernate.entities.Student;
-import org.springframework.data.repository.CrudRepository;
+import com.example.hw_26_hibernate.entities.Mark;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface StudentRepo extends CrudRepository<Student, Integer> {
+public interface MarkRepo extends JpaRepository<Mark, Integer>, CustomMarkRepo {
 }

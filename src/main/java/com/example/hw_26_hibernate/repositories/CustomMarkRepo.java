@@ -1,21 +1,11 @@
 package com.example.hw_26_hibernate.repositories;
 
+import com.example.hw_26_hibernate.entities.Mark;
 import com.example.hw_26_hibernate.entities.Student;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-import java.util.List;
+public interface CustomMarkRepo {
 
-//@Repository
-public interface CustomStudentRepo {
+    int addMarkToStudent(Student student, Mark mark);
 
-    void addStudent(String name, String email);
-
-    void deleteStudentById(Integer studentId);
-
-    void addMarkToStudent(Integer studentId, String mark);
-
-    List<Student> getAllStudentsList();
-
-    Student getStudentById(Integer id);
+    int changeMarkForStudentByDiscipline(Student student, Mark mark);
 }
