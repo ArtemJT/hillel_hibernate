@@ -9,9 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Locale;
 
-import static com.example.hw_26_hibernate.constants.SqlRequests.INSERT_MARK;
-import static com.example.hw_26_hibernate.constants.SqlRequests.UPDATE_MARK_BY_STUDENT_ID;
-
 public class CustomMarkRepoImpl implements CustomMarkRepo {
 
     @PersistenceContext

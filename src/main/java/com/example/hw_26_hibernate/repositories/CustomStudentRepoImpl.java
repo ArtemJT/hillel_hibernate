@@ -10,8 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.sql.SQLException;
 import java.util.List;
 
-import static com.example.hw_26_hibernate.constants.SqlRequests.*;
-
 public class CustomStudentRepoImpl implements CustomStudentRepo {
 
     @PersistenceContext
